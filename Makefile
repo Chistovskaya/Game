@@ -1,6 +1,6 @@
 WIN = windows
 LIN = linux
-SCRIPT = binary.py
+SCRIPT = Version2.py
 WIN_EXE = --onefile $(SCRIPT) --distpath $(WIN) --workpath $(WIN) --specpath $(WIN) --clean
 LIN_EXE = --onefile $(SCRIPT) --distpath $(LIN) --workpath $(LIN) --specpath $(LIN) --clean
 
@@ -9,16 +9,16 @@ windows:
 	mkdir $(WIN)
 	pip install pyinstaller
 	pyinstaller $(WIN_EXE)
-	./$(WIN)/binary.exe
+	./$(WIN)/Version2.exe
 
 linux:
 	mkdir $(LIN)
 	pip install pyinstaller
 	pyinstaller $(LIN_EXE)
-	./$(LIN)/binary.exe
+	./$(LIN)/Version2.exe
 
 web:
-	cmd /c start http://localhost:8000/binary.html
+	cmd /c start http://localhost:8000/indexv2.html
 	python -m http.server 8000
 
 clean:
