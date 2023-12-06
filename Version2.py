@@ -24,10 +24,12 @@ def find_nearest_row_with_one(array, target_row):
             return target_row + distance
         distance += 1
 
-
-print(tab(25), "BLACKBOX")
-print(tab(20), "CREATIVE COMPUTING")
-print(tab(18), "MORRISTOWN, NEW JERSEY")
+tab(25)
+print("BLACKBOX")
+tab(20)
+print("CREATIVE COMPUTING")
+tab(18)
+print("MORRISTOWN, NEW JERSEY")
 print("\n\n\n")
 
 
